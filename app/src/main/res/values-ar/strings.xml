@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Criminal\'s Curse</string>
+    <string name="quote"> \"يمكنك الاختباء ولكن لا يمكنك الهرب.\"</string>
+    <string name="CameraPermission">الكاميرا</string>
+    <string name="languageselection">اختيار اللغة</string>
+    <string name="LocationPermission">الموقع</string>
+    <string name="authenticate">تعريف</string>
+    <string name="invalid"> كلمة السر خطأ</string>
+    <string name="terms">الشروط والقوانين</string>
+    <string name="allset">انت جاهز</string>
+    <string name="openmenu">افتخ</string>
+    <string name="facescanner">بحث عن الوجه</string>
+    <string name="polygraph">السيارة بحث</string>
+    <string name="titledefault">لعنة الحرامية</string>
+    <string name="menu">فتح الائحة</string>
+    <string name="menutitle">مانيو</string>
+    <string name="criminals">حرامية</string>
+    <string name="phone">رقم الهاتف </string>
+    <string name="report">ابلاغ</string>
+    <string name="fetchlan">استلام اللغات</string>
+    <string name="signing">جاري الدخول</string>
+    <string name="settingsicon">ساتينغس</string>
+    <string name="facesdetected">عدد الوجوه:</string>
+    <string name="termsandconditions">4شروط الخدمة (الشروط والأحكام):
+تساعد هذه المصطلحات في تحديد العلاقة بينك وبين Criminal’s Curse. بشكل عام ، نمنحك إذنًا لاستخدام خدماتنا إذا كنت توافق على اتباع هذه الشروط ، والتي تعكس كيفية عمل Criminal’s Curse. عندما نتكلم "نحن" ، "لدينا" ، فإننا نعني لعنة المجرمين.
+ما الذي يمكن أن تتوقعه منا:
+تقديم مجموعة واسعة من الخدمات المفيدة
+نحن نقدم مجموعة واسعة من الخدمات التي تخضع لهذه الشروط ، بما في ذلك:
+• مسح الوجه
+• الإبلاغ عن الحالات
+• الخرائط التفاعلية
+• الإبلاغ عن رقم الهاتف
+•	و اكثر…
+تم تصميم خدماتنا للعمل معًا ، مما يسهل عليك الانتقال من نشاط إلى آخر.
+ما نتوقعه منك اتبع هذه الشروط والشروط الإضافية الخاصة بالخدمة.</string>
+    <string name="StoragePermission">التخزين</string>
+    <string name="permissiontitle">الازن</string>
+    <string name="username">الاسم</string>
+    <string name="downloadanoun">تنزيل الاعلانات</string>
+    <string name="recording">تسجيل</string>
+    <string name="send">ارسال</string>
+    <string name="microphonepermission">مايكرفون</string>
+    <string name="preprocess">معالجة البيانات</string>
+    <string name="password">كلمة السر</string>
+    <string name="train">تدريب</string>
+    <string name="loading">تحميل</string>
+    <string name="nointernet">لا يوجد انترنت!</string>
+    <string name="closemenu">سكؤ اللائحة</string>
+    <string name="fetchdata">خد</string>
+    <string name="hello_blank_fragment">هلو</string>
+    <string name="next">التالي</string>
+    <string name="back">الرجوع</string>
+    <string-array name="type_of_accident">
+        <item>Choose Category</item>
+        <item>Domestic Violence</item>
+        <item>Robbery</item>
+        <item>Crime</item>
+        <item>Drug Dealing</item>
+
+    </string-array>
+    <string name="logout">خروج</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@android:color/black">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img1"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="Criminal1"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/LastSeen_Status"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/name"
+            android:text="Last Seen : 12AM"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="12dp"
+            android:text="Age:  "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="12dp"
+            android:text="42 years "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dangerous_status"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/LastSeen_Status"
+            android:layout_marginTop="36dp"
+            android:layout_toRightOf="@id/age"
+            android:paddingLeft="20dp"
+            android:text="Dangerous Status: 1"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

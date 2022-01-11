@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutmain"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:background="@android:color/black"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="0"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:background="@drawable/circular"
+                android:id="@+id/counter"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                />
+
+<ImageView
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:background="@drawable/robber"
+    android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/menu"
+                android:tooltipText="@string/menu"
+                android:onClick="open"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="45dp"
+        android:background="#00FFFFFF"
+        android:elevation="2dp"
+        android:overScrollMode="never"
+        android:scrollbarThumbHorizontal="@android:color/black"
+        android:scrollbarTrackHorizontal="@android:color/white"
+        android:scrollbars="none"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/face"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:onClick="menuOpen"
+                android:background="@drawable/face_scanner"
+                android:tooltipText="@string/facescanner" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/map"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="menuOpen"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/map_marker"
+                android:tooltipText="@string/polygraph" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/report"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="menuOpen"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/document"
+                android:tooltipText="@string/report" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/criminals"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="menuOpen"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/people"
+                android:tooltipText="@string/criminals" />
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/phoneinspection"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="menuOpen"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/phone"
+                android:tooltipText="@string/phone" />
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/settings"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="menuOpen"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/settingsicon"
+                android:tooltipText="@string/settingsicon" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white"
+        android:elevation="1dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/white"
+        android:layout_above="@+id/bottom"
+        android:background="@android:color/black"
+        android:id="@+id/frag"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="1"
+        android:background="@android:color/black"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/enclosingframe">
+
+        <View android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:elevation="3dp"
+            android:id="@+id/trigger"
+            android:background="@android:color/transparent"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/recordpic"
+                android:layout_gravity="center"
+                android:background="@drawable/record_icon"
+                android:visibility="visible"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/linearrecord">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live"
+                    android:id="@+id/recordingimage"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/recording"
+                    android:textSize="14sp"
+                    android:text="@string/recording"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/acrade"
+                    />
+            </LinearLayout>
+
+            <com.chibde.visualizer.LineVisualizer
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:elevation="2dp"
+                android:visibility="gone"
+                android:id="@+id/visualizer"/>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/whitebottom"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/bottom"
+        android:background="@android:color/white"
+        android:elevation="1dp" />
+
+</RelativeLayout>

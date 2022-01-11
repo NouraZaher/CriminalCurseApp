@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:background="#4136A6"
+    android:gravity="center"
+    tools:context=".PhoneListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20sp"
+        android:background="#AF4747"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Enter a phone number"
+        android:imeOptions="actionSearch"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold|italic">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:text="phonenumber"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/dial"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:background="#AF4747"
+        android:src="@android:drawable/stat_sys_phone_call"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/report"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/dial"
+        android:background="#AF4747"
+        android:src="@drawable/ic_baseline_assignment_late_24"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/addcontact"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/report"
+        android:background="#AF4747"
+        android:src="@drawable/ic_baseline_person_add_24"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtSearch"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/spam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text=" Spam Phone Numbers"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="This Phone \n Number is \n A Spam "
+        android:textAllCaps="true"
+        android:textColor="#FF0D0D"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/blocking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="You block \n This Number "
+        android:textAllCaps="true"
+        android:textColor="#FF0D0D"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

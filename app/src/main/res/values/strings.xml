@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Criminal\'s Curse</string>
+    <string name="quote">\"YOU CAN RUN, BUT YOU CAN\'T HIDE.\"</string>
+    <string name="CameraPermission">Camera</string>
+    <string name="LocationPermission">Location</string>
+    <string name="authenticate">Authentication &amp; Validation</string>
+    <string name="invalid">Invalid Username or Password</string>
+    <string name="train">Training Model</string>
+    <string name="fetchdata">Fetching Data</string>
+    <string name="preprocess">Processing &amp; Training Data</string>
+    <string name="titledefault">Criminal\'s Curse</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="menu">Open Menu</string>
+    <string name="menutitle">Menu</string>
+    <string name="settingsicon">Settings</string>
+    <string name="loading">Loading Alerts...</string>
+    <string name="nointernet">No Internet Connection Detected!</string>
+    <string name="allset">You\'re All Set</string>
+    <string name="closemenu">Close Menu</string>
+    <string name="facesdetected">Faces Detected:</string>
+    <string name="facescanner">Police Vision</string>
+    <string name="downloadanoun">Downloading Anouncements</string>
+    <string name="recording">Recording</string>
+    <string name="send">Sending</string>
+    <string name="polygraph">Crime Map</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="report">Issue Report</string>
+    <string name="phone">Phone Number Checker </string>
+    <string name="criminals">Criminals</string>
+    <string name="StoragePermission">Storage</string>
+    <string name="permissiontitle">Permission Granting</string>
+    <string name="languageselection">Language Selection</string>
+    <string name="next">Next</string>
+    <string name="termsandconditions">Terms of Service (Terms and Conditions):
+These terms help define the relationship between you and Criminal’s Curse. Broadly speaking, we give you permission to use our services if you agree to follow these terms, which reflect how Criminal’s Curse works. When we speak ”we”, “our”, we mean Criminals’ Curse.
+What you can expect from us:
+Provide a broad range of useful services
+We provide a broad range of services that are subject to these terms, including:
+•	Face Scanning
+•	Reporting Cases
+•	Interactive Maps
+•	Phone Number Reporting
+•	And More…
+Our services are designed to work together, making it easier for you to move from one activity to the next.
+What we expect from you Follow these terms and service-specific additional terms. The permission we give you to use our services continues as long as you meet your responsibilities. Although we give you permission to use our services, we retain any intellectual property rights we have in the services.
+Respect others:
+Many of our services allow you to interact with others. We want to maintain a respectful environment for everyone, which means you must follow these basic rules of conduct:
+•	Comply with applicable laws, including export control, sanctions, and human trafficking laws
+•	Respect the rights of others, including privacy and intellectual property rights
+•	Don’t abuse or harm others or yourself (or threaten or encourage such abuse or harm) — for example, by misleading, defrauding, defaming, bullying, harassing, or stalking others don’t abuse, harm, interfere with, or disrupt the services
+Permission to use your content:
+Some of our services are designed to let you upload, submit, store, send, receive, or share your content. You have no obligation to provide any content to our services and you’re free to choose the content that you want to provide. If you choose to upload or share content, please make sure you have the necessary rights to do so and that the content is lawful.
+Your content remains yours, which means that you retain any intellectual property rights that you have in your content. For example, you have intellectual property rights in the creative content you make, such as the content you write in the reporting section.
+
+Age Requirements:
+If you’re under the age required to use the app (18), you must have your parent or legal guardian’s permission to use a Google Account. Please have your parent or legal guardian read these terms with you. If you’re a parent or legal guardian, and you allow your child to use the services, then these terms apply to you and you’re responsible for your child’s activity on the services.
+To use our services on behalf of an organization:
+•	An authorized representative of that organization must agree to these terms
+•	Your organization’s administrator may assign an account to you. That administrator might require you to follow additional rules and may be able to access or disable your account.
+Your content:
+Some of our services give you the opportunity to make your content publicly available — for example, you may upload a video in order to inform the police station for any potential crime.
+If you think someone is infringing your intellectual property rights, you can send us notice of the infringement and we’ll take appropriate action at shebaro.m@gmail.com
+Some of our services include software that’s offered under open-source license terms. Sometimes there are provisions in the open-source license that explicitly override parts of these terms, so please be sure to read those licenses. (Example: OpenCV and bootstrap libraries).
+Privacy Policy:
+When you use our services, you’re trusting us with your information. We understand that this is a big responsibility and we work hard to protect your information and put you in control. This Privacy Policy is meant to help you understand what information we collect, why we collect it and how you can update, manage, export and delete your information.
+We want you to understand the types of information we collect as you use our services:
+We collect information to provide better services to all our users – from figuring out basic stuff such as which language you speak, to more complex things. The information Criminal’s Curse collects, and how that information is used, depends on how you use our services and how you manage your privacy controls. When you’re signed in, we also collect information that we store with your Account, which we treat as personal information. Things that you create or provide to us.
+When we create your account, you provide us with personal information that includes your username and a password. We also collect the content that you create, upload or receive from others when using our services. This includes things such as email you write and photos and videos that you save. The information that we collect includes unique identifiers, browser type and settings, device type and settings, operating system, mobile network information including operator name and phone number and application version number.
+Your location information:
+We collect information about your location when you use our app, which helps us offer features such as interactive maps. Your location can be determined with varying degrees of accuracy by:
+•	GPS
+•	IP address
+•	Sensor data from your device Information about things near your device, such as Wi-Fi access points, cell towers
+The types of location data that we collect depend in part on your device and account settings. For example, you can turn your Android device’s location on or off using the device’s settings app. You can also turn on Location History if you want to create a private map of where you go with your signed-in devices.
+Your Phone Internal Storage:
+You have to enable permissions regarding your phone’s internal storage in order to storage face images, videos, and to commission the shared preferences settings of the application. If you disabled this, the app won’t function properly and crashes might frequently occur. For this reason, we have made it mandatory to allow the use of phone internal storage permission for the sake of using the app.
+Your Camera:
+We will use your camera to capture potential criminals’ faces and detect them. After the detection phase, we will transfer and feed those faces to the corresponding model in order to subject them to a LBPH algorithm. This algorithm tries to predict if this criminal’s face matches the ones in the database or not. We will also use it to record a video clip to be attached along with the information inputted by the user in the report.
+Your Microphone:
+We will use your microphone to record your voice to send broadcast messages to every police officer within the police station. In addition, the microphone will be utilized to record videos that are going to be attached with the reports sent to the police station.
+</string>
+    <string name="back">Back</string>
+    <string name="openmenu">Menu</string>
+    <string name="microphonepermission">Microphone</string>
+    <string name="signing">Logging in</string>
+    <string name="fetchlan">Fetching Languages From\nhttps://cloud.google.com/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="type_of_accident">
+        <item>Choose Category</item>
+        <item>Domestic Violence</item>
+        <item>Robbery</item>
+        <item>Crime</item>
+        <item>Drug Dealing</item>
+
+    </string-array>
+    <string name="logout">Log Out</string>
+
+</resources>

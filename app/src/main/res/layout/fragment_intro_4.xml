@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Intro_3"
+    android:id="@+id/relative">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/authenticate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:id="@+id/iconimage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authenticate"
+        android:id="@+id/title"
+        android:paddingBottom="10dp"
+        android:layout_toEndOf="@+id/iconimage"
+        android:layout_marginStart="10dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/acrade"
+        android:textSize="36sp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/framefirst"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/usericon"
+            android:background="@drawable/edit_text_drawable"
+            android:textColor="@android:color/black"
+            android:id="@+id/username"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:paddingStart="5dp"
+            android:layoutDirection="ltr"
+            android:hint="@string/username"
+            android:paddingEnd="5dp"
+            android:fontFamily="@font/acrade"
+            android:textCursorDrawable="@null"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/clear1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:layoutDirection="ltr"
+            android:background="@drawable/cross" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/framesecond"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/framefirst">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_drawable"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:drawableStart="@drawable/passicon"
+            android:hint="@string/password"
+            android:fontFamily="@font/acrade"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layoutDirection="ltr"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:id="@+id/clear2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layoutDirection="ltr"
+            android:visibility="gone"
+            android:background="@drawable/cross" />
+    </FrameLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/acrade"
+    android:textSize="14sp"
+    android:textColor="@android:color/white"
+    android:layout_below="@id/framesecond"
+    android:visibility="invisible"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/invalid"
+    android:text="@string/invalid"/>
+</RelativeLayout>

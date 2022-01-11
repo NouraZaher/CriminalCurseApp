@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introduction"
+    android:background="@android:color/black">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frag"
+    android:layout_above="@id/next"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:tooltipText="@string/next"
+        android:id="@+id/next"
+        android:layout_marginRight="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="7dp"
+            android:layoutDirection="ltr"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:checked="true"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:enabled="false" />
+            <RadioButton
+                android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/radio"
+                android:button="@drawable/a"
+                android:enabled="false" />
+        </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:tooltipText="@string/back"
+        android:id="@+id/Back"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

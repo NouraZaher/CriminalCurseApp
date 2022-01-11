@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "770524646058",
+    "firebase_url": "https://criminals-curse-1592081187332.firebaseio.com",
+    "project_id": "criminals-curse-1592081187332",
+    "storage_bucket": "criminals-curse-1592081187332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770524646058:android:68dccace59bce2b1145ed3",
+        "android_client_info": {
+          "package_name": "com.example.criminalscurse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770524646058-dlvs9o6orlujcgf1rdqav1u2eothqp59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3HA_VIibHLXdV9rgseL9IJUM143IH7sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770524646058-dlvs9o6orlujcgf1rdqav1u2eothqp59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
